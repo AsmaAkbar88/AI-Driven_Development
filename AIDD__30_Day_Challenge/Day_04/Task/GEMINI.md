@@ -66,8 +66,6 @@ If you encounter:
 → Re-run:  
 @get-library-docs openai-agents
 
-yaml
-Copy code
 
 And verify the correct syntax.
 
@@ -84,21 +82,12 @@ task4/
 
 ├── .gemini/
 │ └── settings.json
-
 ├── gemini.md
-
 ├── main.py
-
 ├── pyproject.toml
-
 ├── README.md
-
 ├── .env
-
 └── uv.lock
-
-yaml
-Copy code
 
 > Everything must remain inside this root folder. Do NOT create any extra subfolders.
 
@@ -108,11 +97,11 @@ Copy code
 
 ### Step 1 — Load Docs & Verify Syntax
 - Open Gemini CLI  
-- Run:  
+- Run:
+
 @get-library-docs openai-agents
 
-yaml
-Copy code
+
 - Review and understand:
   - How tool decorators work  
   - How to initialize an agent  
@@ -146,9 +135,6 @@ You must:
 - Bind both tools to the agent  
 - Add a static system prompt:  
 "You are a Study Notes Assistant. First produce a summary, then generate a quiz."
-
-yaml
-Copy code
 
 ---
 
