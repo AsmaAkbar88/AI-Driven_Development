@@ -23,7 +23,9 @@ You need to build an AI Agent that:
 ## Strict Technical Rules
 These rules are extremely important; you must follow them exactly:
 
-- **Zero-Bloat Rule**: Write only what is required for the task.  
+- **Zero-Bloat Rule**: 
+
+- Write only what is required for the task.  
 - Do not add unnecessary code.  
 - No extra decorators, comments, or over-engineered error handling.
 
@@ -79,13 +81,20 @@ And verify the correct syntax.
 ## Project File Structure (Your Folder Layout)
 
 task4/
+
 ├── .gemini/
 │ └── settings.json
+
 ├── gemini.md
+
 ├── main.py
+
 ├── pyproject.toml
+
 ├── README.md
+
 ├── .env
+
 └── uv.lock
 
 yaml
