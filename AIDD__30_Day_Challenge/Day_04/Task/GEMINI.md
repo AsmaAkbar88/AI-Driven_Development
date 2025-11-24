@@ -82,11 +82,17 @@ task4/
 
 ├── .gemini/
 │ └── settings.json
+
 ├── gemini.md
+
 ├── main.py
+
 ├── pyproject.toml
+
 ├── README.md
+
 ├── .env
+
 └── uv.lock
 
 > Everything must remain inside this root folder. Do NOT create any extra subfolders.
