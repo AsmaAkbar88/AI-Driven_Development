@@ -3,6 +3,8 @@
 **Role:** Senior Python AI Engineer  
 **Objective:** Build a "PDF Summarizer & Quiz Generator Agent" using OpenAgents SDK and Gemini via Gemini CLI. The goal is to develop a web-based agent that allows students to upload a PDF, receive a clean, meaningful summary, and generate quizzes (MCQs from the original PDF content).
 
+---
+
 ## Project Overview
 You need to build an AI Agent that:
 
@@ -16,17 +18,16 @@ You need to build an AI Agent that:
 **Model:** Gemini (via Gemini CLI)  
 **Tools:** Context7 MCP server (Docs Reader Tool)
 
+---
 
 ## Strict Technical Rules
 These rules are extremely important; you must follow them exactly:
 
-- **Zero-Bloat Rule**:
-
--
-- Write only what is required for the task. Do not add unnecessary code.  
+- **Zero-Bloat Rule**: Write only what is required for the task.  
+- Do not add unnecessary code.  
 - No extra decorators, comments, or over-engineered error handling.
 
-
+---
 
 ## SDK Configuration
 
@@ -37,6 +38,7 @@ These rules are extremely important; you must follow them exactly:
 - Use **OpenAIChatCompletionsModel** for Gemini integration.
 
 ---
+
 ## Tool Integration
 
 - Tools must be defined using the `@function_tool` decorator.  
@@ -49,6 +51,7 @@ These rules are extremely important; you must follow them exactly:
 - Use **uv** for package management.
 
 ---
+
 ## Error Recovery
 If you encounter:
 
@@ -59,9 +62,10 @@ If you encounter:
 → Stop immediately — do NOT guess.  
 
 → Re-run:  
-
 @get-library-docs openai-agents
 
+yaml
+Copy code
 
 And verify the correct syntax.
 
@@ -74,12 +78,9 @@ And verify the correct syntax.
 
 ## Project File Structure (Your Folder Layout)
 
-
-Your Task-4 folder structure inside Gemini CLI will be:
-
 task4/
 ├── .gemini/
-│   └── settings.json
+│ └── settings.json
 ├── gemini.md
 ├── main.py
 ├── pyproject.toml
@@ -87,6 +88,8 @@ task4/
 ├── .env
 └── uv.lock
 
+yaml
+Copy code
 
 > Everything must remain inside this root folder. Do NOT create any extra subfolders.
 
@@ -97,10 +100,10 @@ task4/
 ### Step 1 — Load Docs & Verify Syntax
 - Open Gemini CLI  
 - Run:  
-
 @get-library-docs openai-agents
 
-
+yaml
+Copy code
 - Review and understand:
   - How tool decorators work  
   - How to initialize an agent  
@@ -133,7 +136,10 @@ You must:
 - Use model `gemini-2.0-flash`  
 - Bind both tools to the agent  
 - Add a static system prompt:  
+"You are a Study Notes Assistant. First produce a summary, then generate a quiz."
 
+yaml
+Copy code
 
 ---
 
