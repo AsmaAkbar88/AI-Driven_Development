@@ -1,4 +1,4 @@
-E:\Quater 4\Readme.md# Free Claude Code Setup with Google Gemini
+# Free Claude Code Setup with Google Gemini
 
 A complete setup guide for configuring Claude Code with Gemini models using `claude-code` and `claude-code-router`.
 
